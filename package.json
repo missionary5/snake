@@ -17,6 +17,7 @@
     "make:darwin": "electron-forge make --platform=darwin",
     "make:win32": "electron-forge make --platform=win32",
     "make:linux": "electron-forge make --platform=linux",
+    "make:linux:appimage": "electron-forge make --platform=linux --targets=pear-electron-forge-maker-appimage",
     "start:darwin": "./out/Snake-darwin-arm64/Snake.app/Contents/MacOS/Snake",
     "bootstrap": "node scripts/bootstrap.mjs"
   },

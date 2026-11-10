@@ -6,11 +6,11 @@
   xmlns:desktop6="http://schemas.microsoft.com/appx/manifest/desktop/windows10/6"
   IgnorableNamespaces="rescap desktop6"
 >
-  <Identity Name="HelloPear" Version="1.0.0.0" Publisher="CN=My Publisher" ProcessorArchitecture="x64" />
+  <Identity Name="snake" Version="1.0.0.0" Publisher="CN=Holepunch Inc, O=Holepunch Inc, S=British Virgin Islands (the), C=GB, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=British Virgin Islands (the), OID.1.3.6.1.4.1.311.60.2.1.3=GB, SERIALNUMBER=2009762" ProcessorArchitecture="x64" />
   <Properties>
-    <DisplayName>Hello Pear</DisplayName>
-    <PublisherDisplayName>My Publisher</PublisherDisplayName>
-    <Description>Description of my app</Description>
+    <DisplayName>Snake</DisplayName>
+    <PublisherDisplayName>Holepunch Inc.</PublisherDisplayName>
+    <Description>P2P multiplayer snake game</Description>
     <Logo>build\icon.png</Logo>
     <desktop6:FileSystemWriteVirtualization>disabled</desktop6:FileSystemWriteVirtualization>
   </Properties>
@@ -26,8 +26,8 @@
     <rescap:Capability Name="unvirtualizedResources" />
   </Capabilities>
   <Applications>
-    <Application Id="App" Executable="app\HelloPear.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="Hello Pear" Description="Description of my app" Square150x150Logo="build\icon.png" Square44x44Logo="build\icon.png" BackgroundColor="transparent" />
+    <Application Id="App" Executable="app\Snake.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="Snake" Description="P2P multiplayer snake game" Square150x150Logo="build\icon.png" Square44x44Logo="build\icon.png" BackgroundColor="transparent" />
     </Application>
   </Applications>
 </Package>

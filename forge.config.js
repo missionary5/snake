@@ -121,6 +121,8 @@ module.exports = {
     preMake: async () => {
       fs.rmSync(path.join(__dirname, 'out', 'make'), { recursive: true, force: true })
 
+      if (process.platform !== 'win32') return
+
       const manifest = path.join(__dirname, 'build', 'AppxManifest.xml')
       const msixVersion = pkg.version.replace(/^(\d+\.\d+\.\d+)$/, '$1.0')
       const xml = fs.readFileSync(manifest, 'utf-8')
